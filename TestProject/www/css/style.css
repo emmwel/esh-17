@@ -1,0 +1,105 @@
+
+/* -------------- main-css -------------- */
+
+input, textarea  { -webkit-user-select:text; }
+body { 
+    background-color: #3eb1b1;
+    color:white;
+}
+
+#page {
+    text-align: center;
+    border-bottom: solid 1px #FFC;
+    height: auto;
+    padding: 0;
+    bottom: 0;
+}
+
+#main{
+    margin-top: 50px;
+}
+
+#header.floating {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menu{
+
+	width:100%;
+	table-layout: fixed;
+}
+
+#header-wrapper {
+    
+    
+}
+
+/* -------------- positions ----------- */
+
+#center
+{
+    margin: 0 auto !important;
+    max-width: 1280px !important;
+}
+
+.center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+
+
+
+
+
+.ani {
+	-webkit-animation: blink 2s infinite;
+}
+
+@-webkit-keyframes blink {
+	0%, 100%  { -webkit-filter: saturate(0); }
+	50% { -webkit-filter: saturate(1); }
+}
+
+@-webkit-keyframes blinkW {
+	0% { 
+	-webkit-filter: saturate(1.00);
+    filter: saturate(1.00);	
+	}
+	50% { 
+	-webkit-filter: saturate(2.00);
+	filter: saturate(2.00);
+	}
+}
+
+
+
+.hide{	
+	display: none !important;
+}
+
+.menuButton {
+    
+    width: 200px;
+    height: 40px;
+    
+}
+
+
+img {
+	display: block;
+	top: 50%;
+    width: 100% !important;
+    height: auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 140px;
+	max-height: 357;
+}
