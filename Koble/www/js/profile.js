@@ -73,9 +73,18 @@ Profile.prototype = {
         items += '<div>';
         items += '<h2> '+ self.user.fullname +', '+ self.user.age +' </h2>'; // CSS here plz
         items += '</div>'; 
+        
+        items += '<input type="button" onclick="window.state.goToMyTags();" value="My tags" />';
        
         return items;
         
+    },
+    
+    goToMyTags: function() {
+    
+        window.state = new UserTags();
+        window.state.init();
+    
     },
     
     back: function() {
