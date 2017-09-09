@@ -20,9 +20,9 @@ UserTags.prototype = {
     },
     
     
-    initBtns: function(name){
+    initBtns: function(name, users){
             var self = this;       
-            window.state = new Activity();
+            window.state = new Activity(name, users);
             window.state.init();
     },
     
@@ -50,8 +50,8 @@ UserTags.prototype = {
         $.each( data, function( key, val ) {
                 data2 = val["activities"];
                 
-                places += '<div class="placesDiv"><input type="button" onclick="window.state.initBtns(\'' + val["name"] +'\');" value= "' + val["name"] + '"/>';
-                places += '<h2> Aktiviteter: ' + data2.length + '</h2>';
+                places += '<div class="placesDiv"><h2>' + val["name"] +'</h2>';
+                places += '<h2> Aktiviteter:  </h2>';
                 
                 $.each( data2, function(key2, val2) {
                     
@@ -63,7 +63,8 @@ UserTags.prototype = {
                         if( users[i] === username )
                         {
                             
-                            places += '<h3>' +val2["name"]+ '</h3>';
+                            places += '<input type="button" onclick="window.state.initBtns(\'' + val2["name"] +'\', \'' + users +'\');" value="' + val2["name"] + '"/><h2></h2>';
+                            console.log("fgfgfg");
                         }
                     }
                      
@@ -72,8 +73,6 @@ UserTags.prototype = {
                 places += '</div>';
                  
             });
-        
-        console.log("out HERE");
         
         return places;
         
