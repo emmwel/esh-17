@@ -29,10 +29,10 @@ Explore.prototype = {
     },
  
 
-    back: function(){
-	
-	
-		
+    back: function() {
+        
+         window.state = new Menu();
+         window.state.init();
     }
 	
 };

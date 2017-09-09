@@ -23,6 +23,7 @@ Login.prototype = {
 		$("#loginBtn").on("click",function(){ 
 			
             self.loginUser();
+            console.log("onCLick");
 			
         });
 			
@@ -31,6 +32,8 @@ Login.prototype = {
     
     loginUser: function(){
       
+        console.log("inonnn");
+        
         var self = this;
         var username = $("#username").val();
         var password = $("#password").val();
