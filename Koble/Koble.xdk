@@ -5,7 +5,11 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14c0fb84-8ef7-40ef-8b85-455a14db4cd1",
+<<<<<<< Updated upstream
       "lastModifiedDate": 1504953173677,
+=======
+      "lastModifiedDate": 1504959720111,
+>>>>>>> Stashed changes
       "creationDate": 1504941286886
     },
     "sourceDirectory": "www",

@@ -1,13 +1,42 @@
 [{
-  "username": "SaraOlsson",
-  "password": "lejon"
+    "username": "SaraOlsson",
+    "password": "lejon",
+    "nummer": "+46736633693",
+    "firstname": "Sara",
+    "lastname": "Olsson",
+    "fullname": "Sara Olsson",
+    "age": 22,
+    "gender": "Kvinna",
+    "score": 0
 }, {
-   "username": "EmmaNilsson",
-   "password": "soja"
+    "username": "EmmaNilsson",
+    "password": "soja", 
+    "nummer": "+46768482766",
+    "firstname": "Emma",
+    "lastname": "Nilsson",
+    "fullname": "Emma Nilsson",
+    "age": 21,
+    "gender": "Kvinna",
+    "score": 0
 }, {
-   "username": "DanielOlsson",
-   "password": "nemenhello"
+    "username": "DanielOlsson",
+    "password": "nemenhello",
+    "nummer": "+46702252947",
+    "firstname": "Daniel",
+    "lastname": "Olsson",
+    "fullname": "Daniel Olsson",
+    "age": 25,
+    "gender": "Man",
+    "score": 0
 }, {
-   "username": "RasmusElmersson",
-   "password": "vargen"
+    "username": "RasmusElmersson",
+    "password": "vargen",
+    "nummer": "+46735455725",
+    "firstname": "Rasmus",
+    "lastname": "Elmersson",
+    "fullname": "Rasmus Elmersson",
+    "age": 22,
+    "gender": "Man",
+    "score": 0
+    
 }]
