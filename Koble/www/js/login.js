@@ -58,6 +58,8 @@ Login.prototype = {
                         window.state = new Menu();
                         window.state.init();
                         //alert("Login success!");
+                        window.localStorage.setItem("username", username);
+	                    window.localStorage.setItem("password", password);
                         
                     } 
                 }  

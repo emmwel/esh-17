@@ -15,7 +15,7 @@ Explore.prototype = {
 
             $("#main").trigger('create');	
             self.initBtns();
-			
+			self.loadData();
 			
         });
 		
@@ -33,6 +33,25 @@ Explore.prototype = {
         
          window.state = new Menu();
          window.state.init();
+    },
+    
+    loadData: function() {
+        var username = window.localStorage.getItem("username");
+        var jsonData = $.getJSON( "data/places.json", function( data ) { 
+            $.each( data, function( key, val ) {
+                //console.log( "key: " + key + " val: " + val["name"]  ); //  items.push( "<li id='" + key + "'>" + val + "</li>" );
+                data2 = val["activities"];
+                //console.log(  val["activities"] );
+                $.each( data2, function(key2, val2) {
+                    
+                    console.log( val2["users"] ); // array of users
+                    
+                    
+                    //var users = 
+                    
+                });
+            });
+        })
     }
 	
 };

@@ -46,7 +46,7 @@ Menu.prototype = {
             
         });
         
-         $("#myTagsBtn").on("click",function(){
+         $("#createBtn").on("click",function(){
 			     
            window.state = new UserTags();
            window.state.init();
