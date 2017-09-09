@@ -1,0 +1,40 @@
+[{
+    "name": "East Sweden Hack-tältet",
+    "coordinates": {
+        "latitude": "",
+        "longitude": ""
+    },
+    "activities": [
+        {
+            "name": "Hacka",
+            "users": ["SaraOlsson", "EmmaNilsson"]
+        },
+        {
+            "name": "Äta",
+            "users": ["SaraOlsson", "EmmaNilsson", "DanielOlsson", "RasmusElmersson"]
+        }
+    ]
+},
+{
+    "name": "Vallastaden parkering",
+    "coordinates": {
+        "latitude": "",
+        "longitude": ""
+    },
+    "activities": [
+        {
+            "name": "Parkera",
+            "users": ["EmmaNilsson"]
+        },
+        {
+            "name": "Anlända",
+            "users": []
+        },
+        {
+            "name": "Avvika",
+            "users": ["SaraOlsson", "EmmaNilsson", "DanielOlsson", "RasmusElmersson"]
+        
+        }
+    ]
+}, 
+]
