@@ -66,8 +66,8 @@ body :-ms-input-placeholder {
 }
 .loginContainer {
   max-width: 600px;
-  margin: 20% auto;
-  padding: 80px 0;
+  margin: 10% auto;
+  
   height: 400px;
   text-align: center;
 }
@@ -91,7 +91,7 @@ form input {
   outline: 0;
   border: 1px solid rgba(255, 255, 255, 0.4);
   background-color: rgba(255, 255, 255, 0.2);
-  width: 80%;
+  width: 70%;
   height: 70px;
   border-radius: 3px;
   padding: 10px 15px;
@@ -109,7 +109,7 @@ form input:hover {
 }
 form input:focus {
   background-color: white;
-  width: 300px;
+  width: 70%;
   color: #53e3a6;
 }
 form button {
@@ -117,13 +117,15 @@ form button {
      -moz-appearance: none;
           appearance: none;
   outline: 0;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
   background-color: white;
   border: 0;
   padding: 10px 15px;
   margin-bottom: 20px;
   color: #3eb1b1;
   border-radius: 3px;
-  width: 80%;
+  width: 76%;
   height:70px;
   cursor: pointer;
   font-size: 40px;
@@ -242,6 +244,10 @@ form button:hover {
     -webkit-transform: translateY(-700px) rotate(600deg);
             transform: translateY(-700px) rotate(600deg);
   }
+}
+#loginImg{
+    width: 80%;
+    height: auto;
 }
 
 /******************** Page specific ****************/
