@@ -5,11 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14c0fb84-8ef7-40ef-8b85-455a14db4cd1",
-<<<<<<< Updated upstream
-      "lastModifiedDate": 1504953173677,
-=======
-      "lastModifiedDate": 1504959720111,
->>>>>>> Stashed changes
+      "lastModifiedDate": 1504968231912,
       "creationDate": 1504941286886
     },
     "sourceDirectory": "www",
@@ -84,7 +80,8 @@
           "android-installLocation": "auto",
           "Fullscreen": false,
           "Orientation": "portrait",
-          "android-signed": true
+          "android-signed": true,
+          "AndroidLaunchMode": "singleTop"
         },
         "isActive_": true,
         "certificateId_": "",
@@ -108,7 +105,32 @@
           ],
           "navigation": []
         },
-        "icons_": [],
+        "icons_": [
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/logo36.png",
+            "width": 36,
+            "height": 36
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/logo48.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/logo72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/logo96.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",
