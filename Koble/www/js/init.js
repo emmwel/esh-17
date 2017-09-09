@@ -23,7 +23,7 @@ function Init(){
     /*
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("In here");
+        console.log("In here"); 
         
         
         // Read NDEF formatted NFC Tags

@@ -264,7 +264,7 @@ form button:hover {
 
 }
 #headerBtn{
-    background:url(img/back.png) no-repeat;
+    background: transparent;
     font-family: 'Source Sans Pro', sans-serif;
     border: none;
     color: white;
@@ -276,7 +276,7 @@ form button:hover {
     float:left;
 }
 #headerBtn2{
-    background:url(img/back.png) no-repeat;
+    background: transparent;
     font-family: 'Source Sans Pro', sans-serif;
     border: none;
     color: white;
@@ -310,3 +310,11 @@ form button:hover {
     margin-top: 10px;
     
 }
+
+/* Places */
+
+#mapid { 
+    height: 250px; 
+    background-color: lightgrey;
+}
+
