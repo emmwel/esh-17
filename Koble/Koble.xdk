@@ -5,11 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14c0fb84-8ef7-40ef-8b85-455a14db4cd1",
-<<<<<<< Updated upstream
-      "lastModifiedDate": 1504953173677,
-=======
-      "lastModifiedDate": 1504959720111,
->>>>>>> Stashed changes
+      "lastModifiedDate": 1504977252698,
       "creationDate": 1504941286886
     },
     "sourceDirectory": "www",
@@ -70,7 +66,95 @@
         "topLevel": true,
         "checksum": "47137083",
         "gitref": "",
-        "description": "Cordova Splashscreen Plugin"
+        "description": "Cordova Splashscreen Plugin",
+        "cordovaVersion": ">=3.1.0"
+      },
+      {
+        "id": "cordova-plugin-compat",
+        "name": "Compat",
+        "version": "1.0.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-compat",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-compat",
+        "selectedState": "Included",
+        "checksum": "61c62eb",
+        "dependsOn": [],
+        "topLevel": false,
+        "permissions": {},
+        "description": "Cordova Compatibility Plugin",
+        "data": {},
+        "dependedBy": [
+          "phonegap-plugin-barcodescanner"
+        ],
+        "custom": "true"
+      },
+      {
+        "id": "phonegap-plugin-barcodescanner",
+        "name": "BarcodeScanner",
+        "version": "6.0.8",
+        "originType": "cordova.io",
+        "origin": "phonegap-plugin-barcodescanner",
+        "gitref": "",
+        "paramvals": {
+          "CAMERA_USAGE_DESCRIPTION": " "
+        },
+        "sourceLocation": "plugins/phonegap-plugin-barcodescanner",
+        "selectedState": "Included",
+        "checksum": "7888689b",
+        "dependsOn": [
+          "cordova-plugin-compat"
+        ],
+        "topLevel": true,
+        "cordovaVersion": ">=3.0.0",
+        "permissions": {
+          "android:name": [
+            "android.permission.CAMERA",
+            "android.permission.FLASHLIGHT"
+          ]
+        },
+        "description": "You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-inappbrowser",
+        "name": "InAppBrowser",
+        "version": "1.4.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-inappbrowser",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-inappbrowser",
+        "selectedState": "Included",
+        "checksum": "f88bc51f",
+        "dependsOn": [],
+        "topLevel": true,
+        "cordovaVersion": ">=3.1.0",
+        "permissions": {},
+        "description": "Cordova InAppBrowser Plugin",
+        "data": {},
+        "dependedBy": []
+      },
+      {
+        "id": "cordova-plugin-dialogs",
+        "name": "Notification",
+        "version": "1.3.4-dev",
+        "originType": "repo",
+        "origin": "https://github.com/apache/cordova-plugin-dialogs",
+        "gitref": "",
+        "subdir": ".",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-dialogs",
+        "selectedState": "Included",
+        "checksum": "599a8da5",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {},
+        "description": "Cordova Notification Plugin",
+        "data": {},
+        "dependedBy": []
       }
     ],
     "buildConfigurations": {
@@ -84,7 +168,8 @@
           "android-installLocation": "auto",
           "Fullscreen": false,
           "Orientation": "portrait",
-          "android-signed": true
+          "android-signed": true,
+          "AndroidLaunchMode": "singleTop"
         },
         "isActive_": true,
         "certificateId_": "",
@@ -108,7 +193,32 @@
           ],
           "navigation": []
         },
-        "icons_": [],
+        "icons_": [
+          {
+            "density": "ldpi",
+            "relPath": "package-assets/logo36.png",
+            "width": 36,
+            "height": 36
+          },
+          {
+            "density": "mdpi",
+            "relPath": "package-assets/logo48.png",
+            "width": 48,
+            "height": 48
+          },
+          {
+            "density": "hdpi",
+            "relPath": "package-assets/logo72.png",
+            "width": 72,
+            "height": 72
+          },
+          {
+            "density": "xhdpi",
+            "relPath": "package-assets/logo96.png",
+            "width": 96,
+            "height": 96
+          }
+        ],
         "splashes_": [],
         "addlPermissions_": "",
         "excludedLibraries_": "",

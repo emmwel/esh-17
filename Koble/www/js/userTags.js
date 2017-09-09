@@ -6,42 +6,35 @@ UserTags.prototype = {
 	
     init: function(){
         var self = this;
+        var items = '';
         $("#main").load("userTags.html", function(){
             window.state = self;
             
             window.header.set("Tillbaka", "My tags", true);
             $("#main").trigger('create');
 			
-            self.initBtns();
             self.loadData();
+            
         });
 		
     },
     
     
-    initBtns: function(){
-		var self = this;       
-
-       /* $("#exploreBtn").on("click",function(){
-			     
-           window.state = new Explore();
-           window.state.init();
-            
-        }); */
-
-		
+    initBtns: function(name){
+            var self = this;       
+            window.state = new Activity();
+            window.state.init();
     },
     
     loadData: function() {
         
         var self = this;
-        var items = '';
+        
         var username = window.localStorage.getItem("username");
 
         var jsonData = $.getJSON( "data/places.json", function( data ) { 
             
             items = self.createHTML(data, username);
-            console.log("items: " + items);
             
             $("#userTags").html(items);
             $("#userTags").trigger('create');
@@ -51,18 +44,17 @@ UserTags.prototype = {
     },
     
     createHTML: function(data, username) {
-        
+        var self = this;
         var places = '';
         
         $.each( data, function( key, val ) {
-                //console.log( "key: " + key + " val: " + val["name"]  ); //  items.push( "<li id='" + key + "'>" + val + "</li>" );
                 data2 = val["activities"];
-               
-                places += '<div class="placesDiv"><h2>' + val["name"]  + '</h2>';
+                
+                places += '<div class="placesDiv"><input type="button" onclick="window.state.initBtns(\'' + val["name"] +'\');" value= "' + val["name"] + '"/>';
+                places += '<h2> Aktiviteter: ' + data2.length + '</h2>';
                 
                 $.each( data2, function(key2, val2) {
                     
-                   // activities +=
                     
                     var users = val2["users"];
                     for( i in users )
@@ -78,15 +70,15 @@ UserTags.prototype = {
                 });
                 
                 places += '</div>';
-                
-               // items += places ;    
-                
+                 
             });
         
         console.log("out HERE");
+        
         return places;
         
     },
+    
     
     back: function() {
         

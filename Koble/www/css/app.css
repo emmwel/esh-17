@@ -287,6 +287,28 @@ form button:hover {
     font-size: 16px;
     float:right;
 }
+#scanBtn{
+webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 3px;
+    background-color: white;
+    border: 0;
+    padding: 10px 15px;
+    margin-top: 59%;
+    margin-left: 30%;
+    color: #3eb1b1;
+    border-radius: 77px;
+    width: 41%;
+    height: 70px;
+    cursor: pointer;
+    font-size: 40px;
+}
+.main{
+    z-index: 2;
+}
 /******************** Page specific ****************/
 
 /* Tag */
@@ -304,11 +326,13 @@ form button:hover {
 /* My tags */
 
 .placesDiv {
-    
-    height: 60px;
-    background-color: #69c0c0;
-    margin-top: 10px;
-    
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 3px;
+    color: white;
+    padding: 20px;
+    margin:20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* Places */
