@@ -256,7 +256,26 @@ form button:hover {
     width: 80%;
     height: auto;
 }
+#header{
+    font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    margin-top: 5px;
 
+}
+#headerBtn{
+    background:url(img/back.png) no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color:rgba(1,1,1,0);
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:left;
+}
 /******************** Page specific ****************/
 
 /* Tag */
