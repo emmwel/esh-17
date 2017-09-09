@@ -1,0 +1,49 @@
+
+/* allow copy-paste */
+input, textarea  {
+    -webkit-user-select: text ; -moz-user-select: text ; -ms-user-select: text ; user-select: text ;
+}
+
+/******************** General ****************/
+
+
+body {
+
+    background: #3eb1b1; 
+    color: white ;
+}
+
+.center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+}
+
+.menu{
+
+	width:100%;
+	table-layout: fixed;
+}
+
+/* Buttons */
+.menuButton {
+    
+    width: 200px;
+    height: 40px;
+    
+}
+
+/******************** Page specific ****************/
+
+/* Tag */
+
+#beforeTag {
+    
+    width: 90%;
+    height: 150px;
+    margin-top: 40%;
+    background: #339c99;
+    padding-top: 60px;
+    font-size: 20px;
+}

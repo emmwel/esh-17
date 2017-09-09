@@ -1,0 +1,72 @@
+
+/* font classes */ 
+
+.bold   { font-weight: bold;   }
+.noBold { font-weight: normal; }
+.textAlignLeft { text-align: left !important; }
+
+.extraBigText { font-size:40px !important;  }
+.bigText	  { font-size: 24px !important; }
+.mediumText   { font-size: 16px !important; }
+.miniText 	  { font-size: 12px !important; }
+.font14 	  { font-size: 14px !important; }
+
+/* widths */
+
+.maxWidth800 { max-width: 800px !important; }
+.maxWidth600 { max-width: 600px !important; }
+.maxWidth500 { max-width: 500px !important; }
+.maxWidth400 { max-width: 400px !important; }
+.maxWidth300 { max-width: 300px !important; }
+.maxWidth250 { max-width: 250px !important; }
+.maxWidth200 { max-width: 200px !important; }
+.maxWidth180 { max-width: 180px !important; }
+.maxWidth120 { max-width: 120px !important; }
+.maxWidth150 { max-width: 150px !important; }
+.maxWidth80  { max-width: 80px  !important; }
+
+.minWidth300 { min-width: 300px !important; }
+
+.buttonWidth140 { max-width: 140px !important; }
+.buttonWidth    { max-width: 100px !important; }
+
+/* heights */
+
+.minHeight100 { min-height: 100px !important; }
+
+/* margins and paddings */
+
+.marginBottom20 { margin-bottom: 20px !important; }
+
+.marginTop150  { margin-top: 150px !important; }
+.marginTopPage { margin-top: 100px !important; }
+.marginTop70   { margin-top: 70px !important;  }
+.marginTop40   { margin-top: 40px !important;  }
+.marginTop25   { margin-top: 25px !important;  }
+.margin15 	   { margin-top: 15px !important;  }
+.marginTop10   { margin-top: 10px !important;  }
+
+.marginRight7  { margin-right: 7% !important;  }
+.marginLeft7   { margin-left: 7% !important;   }
+.left		   { margin-left: 0 !important;    }
+
+.paddingTop45  { padding-top: 45px !important; }
+.paddingTop25  { padding-top: 25px !important; }
+.paddingTop10  { padding-top: 10px !important; }
+.paddingTop7   { padding-top: 7px !important;  }
+
+/* Colors */
+
+.greenBar { background-color: #19A347 !important; }
+.greenBg  { background-color: #19A347 !important; }
+.redBg    { background-color: #FF3D3D !important; }
+.grayBg	  { background-color: #b2b2b2 !important; }
+.greyBg   { background-color: #b2b2b2 !important; }
+.yellowBar{ background-color: #f5f130 !important; }
+.redBar   { background-color: #ff0000 !important; }
+
+.greenHeaderBar { background: #12AF15 !important; }
+
+
+
+
