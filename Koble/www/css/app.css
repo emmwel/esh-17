@@ -10,7 +10,15 @@ input, textarea  {
 body {
 
     background: #3eb1b1; 
-    color: white ;
+    color: white;
+    margin: 0px;
+}
+
+#header {
+    
+  background: #2a9e9e;
+  height: 40px;
+    
 }
 
 .center
@@ -47,3 +55,4 @@ body {
     padding-top: 60px;
     font-size: 20px;
 }
+

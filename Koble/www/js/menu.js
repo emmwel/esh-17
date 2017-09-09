@@ -35,6 +35,20 @@ Menu.prototype = {
            window.state.init();
             
         });
+        
+        $("#profileBtn").on("click",function(){
+			     
+           window.state = new Profile();
+           window.state.init();
+            
+        });
+        
+         $("#myTagsBtn").on("click",function(){
+			     
+           window.state = new UserTags();
+           window.state.init();
+            
+        });
 		
     },
     
