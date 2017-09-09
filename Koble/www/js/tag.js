@@ -10,7 +10,8 @@ Tag.prototype = {
             window.state = self;
     
             $("#main").trigger('create');
-			
+            window.header.set("Tillbaka", "Tag", true, false);
+            
             self.initBtns();
             
         });
@@ -31,7 +32,7 @@ Tag.prototype = {
 		
     },
     
-    back: function() {
+    back: function() { 
         
          window.state = new Menu();
          window.state.init();

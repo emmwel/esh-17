@@ -263,6 +263,19 @@ form button:hover {
     margin-top: 5px;
 
 }
+
+#header-wrapper{
+    
+    
+    
+}
+
+.threeColumns { 
+    width: 33.3% !important; 
+    position: absolute;
+}
+
+
 #headerBtn{
     background: transparent;
     font-family: 'Source Sans Pro', sans-serif;

@@ -10,7 +10,7 @@ UserTags.prototype = {
         $("#main").load("userTags.html", function(){
             window.state = self;
             
-            window.header.set("Tillbaka", "My tags", true);
+            window.header.set("Tillbaka", "My tags", true, false);
             $("#main").trigger('create');
 			
             self.loadData();

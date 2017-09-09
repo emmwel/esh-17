@@ -9,10 +9,12 @@ Profile.prototype = {
         var self = this;
         $("#main").load("profile.html", function(){
             window.state = self;
+            
+             window.header.set("Tillbaka", "My tags", true, true);
     
+            self.initSettings();
             $("#main").trigger('create');
 			
-            self.initBtns();
             self.getProfile();
             
         });
@@ -23,13 +25,31 @@ Profile.prototype = {
     initBtns: function(){
 		var self = this;       
 
-       /* $("#exploreBtn").on("click",function(){
-			     
+        $("#settingsButton").on("click",function(){
+			 
+             window.state = new Settings();
+             window.state.init();
             
-        }); */
+        }); 
 
 		
     },
+    
+    initSettings: function() {
+        
+        var items = '<input type="button" id="settingsButton" value="Settings" />';
+        $("#settingsBtnDiv").html(items);
+   
+        
+    },
+    
+    /*
+    goToSettings: function() {
+        
+         window.state = new Settings();
+         window.state.init();
+        
+    },*/
     
     getProfile: function() {
         var self = this;
@@ -40,6 +60,8 @@ Profile.prototype = {
             //self.createHTML(data);
              
             items = self.createHTML(data);
+            window.localStorage.setItem("settings", true); 
+             
             //console.log("itemss: " + items);
             
             $("#profileContent").html(items);
@@ -89,6 +111,7 @@ Profile.prototype = {
     
     back: function() {
         
+         window.localStorage.setItem("settings", false);
          window.state = new Menu();
          window.state.init();
     }
