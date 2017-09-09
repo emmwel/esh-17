@@ -301,3 +301,12 @@ form button:hover {
     font-size: 20px;
 }
 
+/* My tags */
+
+.placesDiv {
+    
+    height: 60px;
+    background-color: #69c0c0;
+    margin-top: 10px;
+    
+}
