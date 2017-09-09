@@ -7,7 +7,8 @@
     "fullname": "Sara Olsson",
     "age": 22,
     "gender": "Kvinna",
-    "score": 0
+    "score": 0,
+    "PhoneID": "dfasfdsafa"
 }, {
     "username": "EmmaNilsson",
     "password": "soja", 
@@ -17,7 +18,8 @@
     "fullname": "Emma Nilsson",
     "age": 21,
     "gender": "Kvinna",
-    "score": 0
+    "score": 0,
+    "PhoneID": "dfasfd"
 }, {
     "username": "DanielOlsson",
     "password": "nemenhello",
@@ -27,7 +29,9 @@
     "fullname": "Daniel Olsson",
     "age": 25,
     "gender": "Man",
-    "score": 0
+    "score": 0,
+    "PhoneID": "KglCYFyWyNjADIEjTr3jzefz6AAywCQz"
+
 }, {
     "username": "RasmusElmersson",
     "password": "vargen",
@@ -37,6 +41,7 @@
     "fullname": "Rasmus Elmersson",
     "age": 22,
     "gender": "Man",
-    "score": 0
+    "score": 0,
+    "PhoneID": "g2kxBczQTLPErNaEXtJhKc6HSbRohmbd"
     
 }]
