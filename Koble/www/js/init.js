@@ -6,11 +6,12 @@ function Init(){
 		
 	window.localStorage.setItem("username", username);
 	window.localStorage.setItem("password", password);
+
 	
     document.cookie="username="+username;
     document.cookie="password="+password;
 
-    window.header = new Header("", "Välkommen", false);
+    window.header = new Header("", "Välkommen", false, false);
     window.header.init();
     
     window.state = new Login(); // // Login() go to Login directly when the app is started
