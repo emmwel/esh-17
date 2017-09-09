@@ -105,7 +105,7 @@ form input {
   margin: 0 auto 10px auto;
   display: block;
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   color: white;
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
@@ -117,7 +117,7 @@ form input:hover {
 form input:focus {
   background-color: white;
   width: 70%;
-  color: #53e3a6;
+  color: #3eb1b1;
 }
 form button {
   -webkit-appearance: none;
@@ -266,7 +266,6 @@ form button:hover {
 #headerBtn{
     background:url(img/back.png) no-repeat;
     font-family: 'Source Sans Pro', sans-serif;
-    background-color:rgba(1,1,1,0);
     border: none;
     color: white;
     padding: 10px 10px;
@@ -275,6 +274,18 @@ form button:hover {
     display: inline-block;
     font-size: 16px;
     float:left;
+}
+#headerBtn2{
+    background:url(img/back.png) no-repeat;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:right;
 }
 /******************** Page specific ****************/
 

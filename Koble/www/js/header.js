@@ -27,6 +27,7 @@ Header.prototype = {
         if( this.show == true ) // 
         {
             this.html += '<input type="button" id="headerBtn" onclick="window.state.back();" value="' + this.backText + '" />';
+            this.html += '<input type="button" id="headerBtn2" onclick="window.state.back();" value="' + this.backText + '" />';
         }
        
         this.html += '<p>' +this.title+ '</p>';
