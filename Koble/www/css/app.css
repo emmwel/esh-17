@@ -318,3 +318,12 @@ form button:hover {
     background-color: lightgrey;
 }
 
+/* Profile */
+
+.userImg {
+    
+    max-width: 80%;
+    border-radius: 1000px;
+    margin-top: 40px;
+    
+}

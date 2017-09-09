@@ -16,8 +16,9 @@ Explore.prototype = {
 
             $("#main").trigger('create');	
             self.initBtns();
-			self.loadData();
-			
+			// self.loadData();
+			self.loadDataJSON();
+            
         });
 		
     },
@@ -62,6 +63,31 @@ Explore.prototype = {
             
             items = self.createHTML(data, username);
             console.log("items: " + items);
+            
+            $("#userTags").html(items);
+            $("#userTags").trigger('create');
+        
+        }) 
+        
+    },
+    
+    loadDataJSON: function() {
+        
+        var self = this;
+        var items = '';
+        var username = window.localStorage.getItem("username");
+
+        
+        $.ajaxSetup({
+              "error":function() { console.log("error");  }
+        });
+        
+        var jsonData = $.getJSON( "http://10.0.0.17/places.json", function( data ) { 
+            
+            console.log(data);
+            
+             items = self.createHTML(data, username);
+            console.log("itemss: " + items);
             
             $("#userTags").html(items);
             $("#userTags").trigger('create');
