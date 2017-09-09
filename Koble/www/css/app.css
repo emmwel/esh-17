@@ -7,7 +7,14 @@ input, textarea  {
 /******************** General ****************/
 
 
+.center
+{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
 }
+
+
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300);
 * {
   box-sizing: border-box;

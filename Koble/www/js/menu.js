@@ -9,6 +9,7 @@ Menu.prototype = {
         $("#main").load("menu.html", function(){
             window.state = self;
     
+            window.header.set("Tillbaka", "Meny", true);
             $("#main").trigger('create');
 			
             self.initBtns();
@@ -23,6 +24,8 @@ Menu.prototype = {
 
         $("#exploreBtn").on("click",function(){
 			     
+                
+            
            window.state = new Explore();
            window.state.init();
             

@@ -10,7 +10,7 @@ function Init(){
     document.cookie="username="+username;
     document.cookie="password="+password;
 
-    window.header = new Header("", "Välkommen");
+    window.header = new Header("", "Välkommen", false);
     window.header.init();
     
     window.state = new Login(); // // Login() go to Login directly when the app is started

@@ -31,5 +31,11 @@ Profile.prototype = {
 		
     },
     
+    back: function() {
+        
+         window.state = new Menu();
+         window.state.init();
+    }
+    
     
 };
