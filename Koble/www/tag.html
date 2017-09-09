@@ -2,12 +2,68 @@
          
 <div>
     
-    <!-- Hide when tagged -->
+    <!-- Hide when tagged 
     <div class="center" id = beforeTag> <h2> Tagga </h2></div>
     
-    <!-- Hide before tagged -->
+    Hide before tagged
     <div class="center" id = taggedState> 
     
-    </div>
+    </div>-->
+    
+            <div data-role="page" id="home">
+
+            <div data-role="main" class="ui-content">
+                <p>
+                    <a target="_blank" href="javascript:scan();" style="text-decoration: none"><button id='scanBtn'>Scan</button></a>
+                </p>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+            function scan()
+            {
+                cordova.plugins.barcodeScanner.scan(
+                    function (result) {
+                        if(!result.cancelled)
+                        {
+                            if(result.format == "QR_CODE")
+                            {
+                                    $(location).attr('href', 'http://10.0.0.17');
+                            }
+                        }
+                    },
+                    function (error) {
+                        alert("Scanning failed: " + error);
+                    }
+               );
+            }
+            $(document).on("pagebeforeshow", "#display", function() {
+                $("table#allTable tbody").empty();
+                var data = localStorage.getItem("LocalData");
+                console.log(data);
+                data = JSON.parse(data);
+                var html = "";
+                for(var count = 0; count < data.length; count++)
+                {
+                    html = html + "<tr><td>" + data[count][0] + "</td><td><a href='javascript:openURL(\"" + data[count][1] + "\")'>" + data[count][1] + "</a></td></tr>";
+                }
+                $("table#allTable tbody").append(html).closest("table#allTable").table("refresh").trigger("create");
+            });
+            function openURL(url)
+            {
+                window.open(url, '_blank', 'location=yes');
+            }
+            //initialize
+            if(localStorage.getItem("LocalData") == null)
+            {
+                var data = [];
+                data = JSON.stringify(data);
+                localStorage.setItem("LocalData", data);
+            }
+        </script>
     
 </div>
