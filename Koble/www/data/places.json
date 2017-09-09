@@ -7,10 +7,12 @@
     "activities": [
         {
             "name": "Hacka",
+            "TagID":"b70430742e67732f45457863774f1e19",
             "users": ["SaraOlsson", "EmmaNilsson"]
         },
         {
             "name": "Äta",
+            "TagID": "b70430742e67732f7766664b4951d195",
             "users": ["SaraOlsson", "EmmaNilsson", "DanielOlsson", "RasmusElmersson"]
         }
     ]
@@ -24,14 +26,17 @@
     "activities": [
         {
             "name": "Parkera",
+            "TagID": "b70430742",
             "users": ["EmmaNilsson"]
         },
         {
             "name": "Anlända",
+            "TagID": "b70430742951d195",
             "users": []
         },
         {
             "name": "Avvika",
+            "TagID": "b766664b4951d195",
             "users": ["SaraOlsson", "EmmaNilsson", "DanielOlsson", "RasmusElmersson"]
         
         }
