@@ -71,10 +71,10 @@ Profile.prototype = {
         
         items += '<img src="img/'+ self.user.username +'.jpg" class="userImg center"/>';
         items += '<div>';
-        items += '<h2> '+ self.user.fullname +', '+ self.user.age +' </h2>'; // CSS here plz
+        items += '<h2 class="profileTxt" > '+ self.user.fullname +', '+ self.user.age +' </h2>'; // CSS here plz
         items += '</div>'; 
         
-        items += '<input type="button" onclick="window.state.goToMyTags();" value="My tags" />';
+        items += '<input class="profileBtn" type="button" onclick="window.state.goToMyTags();" value="My tags" />';
        
         return items;
         
