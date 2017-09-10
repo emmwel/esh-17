@@ -94,7 +94,9 @@ Profile.prototype = {
         items += '<img src="img/'+ self.user.username +'.jpg" class="userImg center"/>';
         items += '<div>';
         items += '<h2 class="profileTxt" > '+ self.user.fullname +', '+ self.user.age +' </h2>'; 
-        items += '<h2> ConnectScore: '+ self.user.score +'</h2>'; // CSS here plz
+        items += '<div class="userScore">';
+        items += '<h2 id="h2Score"> '+self.user.score +'p</h2>'; // CSS here plz
+        items += '</div>'; 
         items += '</div>'; 
         
         items += '<input class="profileBtn" type="button" onclick="window.state.goToMyTags();" value="My tags" />';
