@@ -10,7 +10,7 @@ Profile.prototype = {
         $("#main").load("profile.html", function(){
             window.state = self;
             
-             window.header.set("Tillbaka", "My tags", true, true);
+             window.header.set("Back", "My profile", true, true);
             $("#main").trigger('create');
 			
             self.getProfile();

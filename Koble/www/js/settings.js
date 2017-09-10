@@ -11,7 +11,7 @@ Settings.prototype = {
         $("#main").load("settings.html", function(){
             window.state = self;
     
-            window.header.set("Tillbaka", "Settings", true, false);
+            window.header.set("Back", "Settings", true, false);
             $("#main").trigger('create');
             
 			var dropdowns = document.getElementsByClassName("dropdown-content");

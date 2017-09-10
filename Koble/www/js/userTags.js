@@ -10,7 +10,7 @@ UserTags.prototype = {
         $("#main").load("userTags.html", function(){
             window.state = self;
             
-            window.header.set("Tillbaka", "My tags", true, false);
+            window.header.set("Back", "My tags", true, false);
             $("#main").trigger('create');
 			
             self.loadData();
@@ -62,7 +62,6 @@ UserTags.prototype = {
                        
                         if( users[i] === username )
                         {
-                            
                             places += '<input id="userTagsBtn" type="button" onclick="window.state.initBtns(\'' + val2["name"] +'\', \'' + users +'\');" value="' + val2["name"] + '"/><h2></h2>';
                             console.log("fgfgfg");
                         }

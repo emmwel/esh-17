@@ -27,7 +27,6 @@ body {
     background: #3eb1b1; 
     color: white;
     margin: 0px;
-    overflow: hidden;
 }
 
 #header {
@@ -78,6 +77,7 @@ body :-ms-input-placeholder {
   
   height: 400px;
   text-align: center;
+    overflow: hidden;
 }
 .loginContainer h1 {
   font-size: 100px;
@@ -423,6 +423,10 @@ webkit-appearance: none;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 20px;
 }
+
+#profileContent. {
+    overflow: hidden;
+}
 .activityUserImg {
 
     width: 50%;
@@ -470,6 +474,11 @@ webkit-appearance: none;
     margin:20px;
     font-family: 'Source Sans Pro', sans-serif;
 }
+
+#activity {
+    overflow: :
+}
+
 #actH2 {
         font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
