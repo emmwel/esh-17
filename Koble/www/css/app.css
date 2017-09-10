@@ -385,6 +385,24 @@ webkit-appearance: none;
     
 }
 
+#locBtn {
+outline: 0;
+    border: 1px solid rgba(80, 163, 162, 0.6);
+    border-radius: 3px;
+    background-color: #3eb1b1;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    width: 200px;
+    height: 38px;
+    cursor: pointer;
+    margin-top: 26px;
+}
+
+.locCon{
+    margin-top: 30px;
+}
+
 /* Profile */
 
 .userImg {

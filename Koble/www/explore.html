@@ -96,8 +96,8 @@
         };
         
         var contentString = '<div class="mapPopup blackFont">'+
-            '<input type="button" value="See activities" onclick="window.state.loadData(\''+[test]+'\');" />'+
-            '<input type="button" value="Add activity here" />'+
+            '<input type="button" class="locCon" id="locBtn" value="See activities" onclick="window.state.loadData(\''+[test]+'\');" />'+
+            '<input type="button" id="locBtn" value="Add activity here" />'+
             '</div>';
         
         var infowindow = new google.maps.InfoWindow({
@@ -116,6 +116,7 @@
         var marker2 = new google.maps.Marker({
               position: clubTag,
               map: map,
+              icon: 'img/marker.png',
               title: 'Club Valla'
         });
         
