@@ -10,7 +10,7 @@ Tag.prototype = {
             window.state = self;
     
             $("#main").trigger('create');
-            window.header.set("Tillbaka", "Tag", true, false);
+            window.header.set("Back", "Tag", true, false);
             
             self.initBtns();
             

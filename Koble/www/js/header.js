@@ -8,7 +8,7 @@ function Header(backText, title, showBackBtn, showSettingsBtn ){
 Header.prototype = {
     init: function(){
         
-        this.set(this.backText, this.title, this.show);
+        this.set(this.backText, this.title, this.show, this.showSettings);
         
     },
 	
