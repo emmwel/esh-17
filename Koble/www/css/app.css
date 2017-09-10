@@ -341,13 +341,28 @@ webkit-appearance: none;
 /* My tags */
 
 .placesDiv {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
     color: white;
     padding: 20px;
     margin:20px;
     font-family: 'Source Sans Pro', sans-serif;
+    height: 150px;
+}
+#userTagsBtn {
+    background: rgba(80, 163, 162, 0.3);
+    font-family: 'Source Sans Pro', sans-serif;
+    border: 1px solid rgba(80, 163, 162, 0.5);
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:center;
+    margin-top: 10px;
+    border-radius: 3px;
 }
 
 /* Places */
@@ -409,5 +424,87 @@ webkit-appearance: none;
     margin: 20px;
 }
 .activityUserImg {
+
+    width: 50%;
+      display: block;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-border-radius: 99em;
+  -moz-border-radius: 99em;S
+  border-radius: 1000px;
+  border: 5px solid #eee;
+
+}
+.userScore {
+    position: absolute;
+    top: 87px;
+    left: 250px;
+    height: 100px;
+    width: 100px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    background-color: rgba(80, 163, 162, 0.9);
+    display: block;
+    -webkit-border-radius: 99em;
+    -moz-border-radius: 99em;
+    border-radius: 1000px;
+    border: 5px solid #eee;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+    
+}
+#h2Score {
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+/* Activity */
+.activityUser {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
+    padding: 20px;
+    margin:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+#actH2 {
+        font-size: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
+}
+#actH3 {
+        font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#myDropdown {
+    width: 71%;
+    outline: 0;
+    border: 1px solid rgba(80, 163, 162, 0.8);
+    border-radius: 3px;
+    background-color: rgba(80, 163, 162, 0.9);
+    border: 0;
+    margin-left: 55px;
+    color: #3eb1b1;
+
+} 
+.show{display:block;}
+
+#woman, #man, #allGenders {
     width: 100%;
 }

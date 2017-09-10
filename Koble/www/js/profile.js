@@ -11,8 +11,6 @@ Profile.prototype = {
             window.state = self;
             
              window.header.set("Tillbaka", "My tags", true, true);
-    
-            self.initSettings();
             $("#main").trigger('create');
 			
             self.getProfile();
@@ -21,35 +19,12 @@ Profile.prototype = {
 		
     },
     
-    
-    initBtns: function(){
-		var self = this;       
-
-        $("#settingsButton").on("click",function(){
-			 
-             window.state = new Settings();
-             window.state.init();
-            
-        }); 
-
-		
-    },
-    
-    initSettings: function() {
-        
-        var items = '<input type="button" id="settingsButton" value="Settings" />';
-        $("#settingsBtnDiv").html(items);
-   
-        
-    },
-    
-    /*
     goToSettings: function() {
         
          window.state = new Settings();
          window.state.init();
         
-    },*/
+    },
     
     getProfile: function() {
         var self = this;
@@ -94,7 +69,9 @@ Profile.prototype = {
         items += '<img src="img/'+ self.user.username +'.jpg" class="userImg center"/>';
         items += '<div>';
         items += '<h2 class="profileTxt" > '+ self.user.fullname +', '+ self.user.age +' </h2>'; 
-        items += '<h2> ConnectScore: '+ self.user.score +'</h2>'; // CSS here plz
+        items += '<div class="userScore">';
+        items += '<h2 id="h2Score"> '+self.user.score +'p</h2>'; // CSS here plz
+        items += '</div>'; 
         items += '</div>'; 
         
         items += '<input class="profileBtn" type="button" onclick="window.state.goToMyTags();" value="My tags" />';

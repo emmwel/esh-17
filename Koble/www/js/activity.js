@@ -58,7 +58,7 @@ Activity.prototype = {
          // save all user information in self.user (this.user)
          $.each( data, function( key, val ) {
              for(i in self.users) {
-                if (self.users[i] == val["username"]) {
+                if (self.users[i] == val["username"] && self.users[i] != window.localStorage.getItem("username")) {
                     self.user[i] = (data[key]);
                     ++i;
                     return; 
@@ -68,15 +68,31 @@ Activity.prototype = {
         }); 
         
         for(j in self.user) {
-            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
-            items += '<h3>' + self.user[j].gender + '</h3></div>';
+
+            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2 id="actH2">' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+            items += '<h3>' + self.user[j].gender + '</h3 actH3></div>';
+
+            if(window.localStorage.getItem("genderPref") == "All") {
+                if (self.user[j].age > window.localStorage.getItem("ageMin") && self.user[j].age < window.localStorage.getItem("ageMax")) {
+                
+                    items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+                    items += '<h3>' + self.user[j].gender + '</h3></div>';
+                } 
+            }
+            
+            else {
+                if (self.user[j].age > window.localStorage.getItem("ageMin") && self.user[j].age < window.localStorage.getItem("ageMax") && self.user[j].gender == window.localStorage.getItem("genderPref")) {
+                    items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+                    items += '<h3>' + self.user[j].gender + '</h3></div>';
+                } 
+            }
+
+            
+
         }
        
         return items;
     },
-    
-    
-    
     
     back: function() {
         

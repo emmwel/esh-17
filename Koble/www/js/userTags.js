@@ -63,7 +63,7 @@ UserTags.prototype = {
                         if( users[i] === username )
                         {
                             
-                            places += '<input type="button" onclick="window.state.initBtns(\'' + val2["name"] +'\', \'' + users +'\');" value="' + val2["name"] + '"/><h2></h2>';
+                            places += '<input id="userTagsBtn" type="button" onclick="window.state.initBtns(\'' + val2["name"] +'\', \'' + users +'\');" value="' + val2["name"] + '"/><h2></h2>';
                             console.log("fgfgfg");
                         }
                     }
