@@ -1,7 +1,7 @@
 function Activity(theName, theUsers){
     this.name = theName;
     this.users = theUsers.split(",");
-    this.user = null;
+    this.user = [];
 };
 
 Activity.prototype = {
@@ -16,11 +16,11 @@ Activity.prototype = {
     
             window.header.set("Tillbaka", "Activity", true);
             $("#main").trigger('create');
-            
+            self.loadData();
+            self.initBtns();
         });
         
-        self.loadData();
-        
+  
 		
     },
     
@@ -33,59 +33,46 @@ Activity.prototype = {
     loadData: function(){
       
         var self = this;
-        var items = "";
-        var username = window.localStorage.getItem("username");
         
-      
-         // save all user information in self.user (this.user)
-         $.each( data, function( key, val ) {
+         var jsonData = $.getJSON( "http://10.0.0.17/users.json", function( data ) { 
             
-             //console.log( "key: " + key + " val: " + val["fullname"]  ); //  items.push( "<li id='" + key + "'>" + val + "</li>" );
+            console.log(data);
+            //self.createHTML(data);
              
-             for (i in users) {
-                if( val["username"] == username){
-                 
-                    self.user.append(data[key]);
-                 
-                }
-             }
-        }); 
-        /*
-        items += '<img src="img/'+ self.user.username +'.jpg" class="userImg center"/>';
-        items += '<div>';
-        items += '<h2> '+ self.user.fullname +', '+ self.user.age +' </h2>'; // CSS here plz
-        items += '</div>'; 
+            items = self.createHTML(data);
+            //window.localStorage.setItem("settings", true); 
+             
+            //console.log("itemss: " + items);
+            
+            $("#activity").html(items);
+            $("#activity").trigger('create');
         
-        items += '<input type="button" onclick="window.state.goToMyTags();" value="My tags" />'; */
-        console.log(user);
-        return items;
+        })
         
     },
     
-    createHTML: function(data, name) {
+    createHTML: function(data) {
         var self = this;
-        var users = "";
-        $.each(data, function(key, val) {
-            data2 = val["activities"];
-            
-            $.each(data2, function(key2, val2){
-                if (self.name == val2["name"]) {
-                    
-                    var activityUsers = val2["users"];
-                       
-                    for(i in activityUsers) {
-                        
-                        var jsonData = $.getJSON( "data/users.json", function( data2 ) {
-                            users += activityUsers[i];
-                        })
-                    }
-                }
-                
-            });
-            
-        });
+        var items = "";
+      
+         // save all user information in self.user (this.user)
+         $.each( data, function( key, val ) {
+             for(i in self.users) {
+                if (self.users[i] == val["username"]) {
+                    self.user[i] = (data[key]);
+                    ++i;
+                    return; 
+                }   
+             }
+              
+        }); 
         
-        return users;
+        for(j in self.user) {
+            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+            items += '<h3>' + self.user[j].gender + '</h3></div>';
+        }
+       
+        return items;
     },
     
     
