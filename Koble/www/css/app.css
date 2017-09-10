@@ -400,3 +400,6 @@ webkit-appearance: none;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 20px;
 }
+.activityUserImg {
+    width: 100%;
+}

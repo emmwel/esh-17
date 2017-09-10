@@ -5,7 +5,7 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14c0fb84-8ef7-40ef-8b85-455a14db4cd1",
-      "lastModifiedDate": 1504980487405,
+      "lastModifiedDate": 1505023687182,
       "creationDate": 1504941286886
     },
     "sourceDirectory": "www",
@@ -70,42 +70,17 @@
         "cordovaVersion": ">=3.1.0"
       },
       {
-        "id": "cordova-plugin-compat",
-        "name": "Compat",
-        "version": "1.0.0",
-        "originType": "cordova.io",
-        "origin": "cordova-plugin-compat",
-        "gitref": "",
-        "paramvals": {},
-        "sourceLocation": "plugins/cordova-plugin-compat",
-        "selectedState": "Included",
-        "checksum": "61c62eb",
-        "dependsOn": [],
-        "topLevel": false,
-        "permissions": {},
-        "description": "Cordova Compatibility Plugin",
-        "data": {},
-        "dependedBy": [
-          "phonegap-plugin-barcodescanner"
-        ],
-        "custom": "true"
-      },
-      {
         "id": "phonegap-plugin-barcodescanner",
         "name": "BarcodeScanner",
-        "version": "6.0.8",
+        "version": "4.1.0",
         "originType": "cordova.io",
         "origin": "phonegap-plugin-barcodescanner",
         "gitref": "",
-        "paramvals": {
-          "CAMERA_USAGE_DESCRIPTION": " "
-        },
+        "paramvals": {},
         "sourceLocation": "plugins/phonegap-plugin-barcodescanner",
         "selectedState": "Included",
-        "checksum": "7888689b",
-        "dependsOn": [
-          "cordova-plugin-compat"
-        ],
+        "checksum": "980170d7",
+        "dependsOn": [],
         "topLevel": true,
         "cordovaVersion": ">=3.0.0",
         "permissions": {
@@ -134,25 +109,6 @@
         "cordovaVersion": ">=3.1.0",
         "permissions": {},
         "description": "Cordova InAppBrowser Plugin",
-        "data": {},
-        "dependedBy": []
-      },
-      {
-        "id": "cordova-plugin-dialogs",
-        "name": "Notification",
-        "version": "1.3.4-dev",
-        "originType": "repo",
-        "origin": "https://github.com/apache/cordova-plugin-dialogs",
-        "gitref": "",
-        "subdir": ".",
-        "paramvals": {},
-        "sourceLocation": "plugins/cordova-plugin-dialogs",
-        "selectedState": "Included",
-        "checksum": "599a8da5",
-        "dependsOn": [],
-        "topLevel": true,
-        "permissions": {},
-        "description": "Cordova Notification Plugin",
         "data": {},
         "dependedBy": []
       }
