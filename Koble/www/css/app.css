@@ -27,6 +27,7 @@ body {
     background: #3eb1b1; 
     color: white;
     margin: 0px;
+    overflow: hidden;
 }
 
 #header {
