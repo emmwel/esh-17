@@ -68,8 +68,8 @@ Activity.prototype = {
         }); 
         
         for(j in self.user) {
-            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
-            items += '<h3>' + self.user[j].gender + '</h3></div>';
+            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2 id="actH2">' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+            items += '<h3>' + self.user[j].gender + '</h3 actH3></div>';
         }
        
         return items;
