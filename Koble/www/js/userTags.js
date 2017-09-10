@@ -50,7 +50,7 @@ UserTags.prototype = {
         $.each( data, function( key, val ) {
                 data2 = val["activities"];
                 
-                places += '<div class="placesDiv"><h2>' + val["name"] +'</h2>';
+                places += '<div class="placesDiv"><h2>' + val["name"] +'</h2>'; 
                 places += '<h2> Aktiviteter:  </h2>';
                 
                 $.each( data2, function(key2, val2) {

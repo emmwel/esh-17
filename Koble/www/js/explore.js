@@ -11,34 +11,17 @@ Explore.prototype = {
         $("#main").load("explore.html", function(){
 		
             window.state = self;
-            self.loadMap();
 
 
             $("#main").trigger('create');	
             self.initBtns();
 			// self.loadData();
-			self.loadDataJSON();
+			// self.loadDataJSON();
             
         });
 		
     },
     
-    loadMap: function() {
-        
-        var map = new ol.Map({
-        target: 'mapid',
-        layers: [
-          new ol.layer.Tile({
-            source: new ol.source.OSM()
-          })
-        ],
-        view: new ol.View({
-          center: ol.proj.fromLonLat([15.5802492, 58.3925303]),
-          zoom: 18
-        })
-      });
-        
-    },
     
     initBtns: function(){
 		var self = this;
@@ -46,6 +29,7 @@ Explore.prototype = {
        
     },
  
+    
 
     back: function() {
         
@@ -53,20 +37,20 @@ Explore.prototype = {
          window.state.init();
     },
     
-    loadData: function() {
+    loadData: function(locationNameIn) {
         
         var self = this;
         var items = '';
+        
         var username = window.localStorage.getItem("username");
 
-        var jsonData = $.getJSON( "data/places.json", function( data ) { 
+        var jsonData = $.getJSON( "http://10.0.0.17/places.json", function( data ) { 
             
-            items = self.createHTML(data, username);
-            console.log("items: " + items);
+            items = self.createHTML(data, username, locationNameIn);
             
-            $("#userTags").html(items);
-            $("#userTags").trigger('create');
-        
+           // $("#userTags").html(items);
+           // $("#userTags").trigger('create');
+         
         }) 
         
     },
@@ -96,14 +80,24 @@ Explore.prototype = {
         
     },
     
-    createHTML: function(data, username) {
+    createHTML: function(data, username, locationNameIn) {
         
         var places = '';
+        var locationName = '';
         
         $.each( data, function( key, val ) {
                 //console.log( "key: " + key + " val: " + val["name"]  ); //  items.push( "<li id='" + key + "'>" + val + "</li>" );
-                data2 = val["activities"];
-               
+            
+                locationName = val["name"]; // location name
+                console.log( "key: " + key + " val: " + val["name"]  );    
+            
+                if(locationName == locationNameIn)
+                {
+                    
+                    console.log("Found it");
+                }
+            
+               /*
                 places += '<div class="placesDiv"><h2>' + val["name"]  + '</h2>';
                 
                 $.each( data2, function(key2, val2) {
@@ -125,7 +119,7 @@ Explore.prototype = {
                 
                 places += '</div>';
                 
-               // items += places ;    
+               // items += places ;   */ 
                 
             });
         

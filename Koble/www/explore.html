@@ -3,14 +3,50 @@
 <div id="googleMap"></div>
 
 <script>
-function myMap() {
-var mapProp= {
-    center:new google.maps.LatLng(58.391642, 15.581785),
-    zoom:9,
-};
-var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
     
+    var myLatLng = {lat: 58.391642, lng: 15.581785};
+    var test = "East Sweden Hack-taltet";
+    
+    
+    function myMap() {
+        var mapProp= {
+            center:new google.maps.LatLng(58.391642, 15.581785),
+            zoom:15  
+        };
+        
+        var contentString = '<div class="mapPopup blackFont" id="content">'+
+            '<input type="button" value="See activities" onclick="window.state.loadData(\''+[test]+'\');" />'+
+            '<input type="button" value="Add activity here" />'+
+            '</div>';
+        
+        var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+        
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        
+        var marker = new google.maps.Marker({
+              position: myLatLng,
+              map: map,
+              title: 'Hello World!'
+        });
+        
+       /* google.maps.event.addListener(marker, 'click', function(event) {
+          console.log("marker clicked: " + marker.position[0] );
+        }); */
+        marker.addListener('click', function() {
+          console.log("marker clicked: :" + marker.position );
+            infowindow.open(map, marker);
+        });
+    } 
+
+    /*
+    function getActivites() {
+        
+        console.log("Hej!");
+    } */
+    
+
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK40R9mnmQp0RHJrWfZQMWAw5AOinH9Po&callback=myMap"></script>

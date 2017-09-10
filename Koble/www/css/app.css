@@ -363,6 +363,13 @@ webkit-appearance: none;
     overflow: hidden;
 }
 
+.mapPopup {
+    
+    width: 200px;
+    height: 150px;
+    
+}
+
 /* Profile */
 
 .userImg {

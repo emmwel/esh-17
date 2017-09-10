@@ -11,6 +11,8 @@
 .miniText 	  { font-size: 12px !important; }
 .font14 	  { font-size: 14px !important; }
 
+.blackFont    { color: black !important;    }
+
 /* widths */
 
 .maxWidth800 { max-width: 800px !important; }
