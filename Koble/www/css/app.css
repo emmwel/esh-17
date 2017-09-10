@@ -27,6 +27,7 @@ body {
     background: #3eb1b1; 
     color: white;
     margin: 0px;
+    overflow: hidden;
 }
 
 #header {
@@ -399,4 +400,7 @@ webkit-appearance: none;
     font-size: 30px;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 20px;
+}
+.activityUserImg {
+    width: 100%;
 }

@@ -17,6 +17,7 @@ Activity.prototype = {
             window.header.set("Tillbaka", "Activity", true);
             $("#main").trigger('create');
             self.loadData();
+            self.initBtns();
         });
         
   
@@ -39,7 +40,7 @@ Activity.prototype = {
             //self.createHTML(data);
              
             items = self.createHTML(data);
-            window.localStorage.setItem("settings", true); 
+            //window.localStorage.setItem("settings", true); 
              
             //console.log("itemss: " + items);
             
@@ -50,20 +51,25 @@ Activity.prototype = {
         
     },
     
-    createHTML: function(data, name) {
+    createHTML: function(data) {
         var self = this;
         var items = "";
-        var i = 0;
       
          // save all user information in self.user (this.user)
          $.each( data, function( key, val ) {
-                self.user[i] = (data[key]);
-                ++i;
-                return;
+             for(i in self.users) {
+                if (self.users[i] == val["username"]) {
+                    self.user[i] = (data[key]);
+                    ++i;
+                    return; 
+                }   
+             }
+              
         }); 
         
         for(j in self.user) {
-            items += '<div class = activityUser> <h2>' + self.user[j].firstname + '</h2></div>';
+            items += '<div class = activityUser>  <img src="img/'+ self.user[j].username +'.jpg" class="activityUserImg center"/><h2>' + self.user[j].firstname +', ' + self.user[j].age + ' år</h2>';
+            items += '<h3>' + self.user[j].gender + '</h3></div>';
         }
        
         return items;

@@ -9,7 +9,7 @@ Menu.prototype = {
         $("#main").load("menu.html", function(){
             window.state = self;
     
-            window.header.set("Tillbaka", "Meny", true);
+            window.header.set("Tillbaka", "Meny", true, false);
             $("#main").trigger('create');
 			
             self.initBtns();
