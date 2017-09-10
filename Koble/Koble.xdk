@@ -5,7 +5,9 @@
       "projectTypeName": "com.intel.xdk.projecttype.jsapp",
       "src": "jsapp/template-blank-cordova-ad-project/sample.zip",
       "projectGuid": "14c0fb84-8ef7-40ef-8b85-455a14db4cd1",
-      "lastModifiedDate": 1505025682157,
+
+      "lastModifiedDate": 1505023583970,
+
       "creationDate": 1504941286886
     },
     "sourceDirectory": "www",
@@ -70,6 +72,30 @@
         "cordovaVersion": ">=3.1.0"
       },
       {
+<<<<<<< HEAD
+        "id": "cordova-plugin-compat",
+        "name": "Compat",
+        "version": "1.0.0",
+        "originType": "cordova.io",
+        "origin": "cordova-plugin-compat",
+        "gitref": "",
+        "paramvals": {},
+        "sourceLocation": "plugins/cordova-plugin-compat",
+        "selectedState": "Included",
+        "checksum": "61c62eb",
+        "dependsOn": [],
+        "topLevel": true,
+        "permissions": {},
+        "description": "Cordova Compatibility Plugin",
+        "data": {},
+        "dependedBy": [
+          "phonegap-plugin-barcodescanner"
+        ],
+        "custom": "true"
+      },
+      {
+=======
+>>>>>>> 7436a257c3e2aa37aaff7070c5e51c1382acb993
         "id": "phonegap-plugin-barcodescanner",
         "name": "BarcodeScanner",
         "version": "6.0.8",
