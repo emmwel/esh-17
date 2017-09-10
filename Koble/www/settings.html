@@ -6,9 +6,20 @@
             <input type="button" id="editImgBtn" value="Edit profile photo" />
             <input type="button" id="editPasswordBtn" value="Edit password" />
        
-            <p>Preferences</p>
-            <input type="button" id="genderBtn" value="Gender" />
-            <input type="button" id="ageBtn" value="Age" />
+            <h1>Preferences</h1>
+       <div class = "dropdown">
+            <input type="button" onclick="window.state.dropDownGender();" class="dropbtn" value="Gender" />
+            <div id="myDropdown" class="dropdown-content">
+                <input type="button" onclick="window.state.dropWomen();" id="woman" value="Women"/>
+                <input type="button" onclick="window.state.dropMen();" id="man" value="Men"/>
+                <input type="button" onclick="window.state.dropAll();" id="allGenders" value="All genders"/>
+            </div>
+       </div>
+       
+            <h2>Age range:</h2>
+            <input type="text" id="minAge" onchange="window.state.getMinAge();">
+            <input type="text" id="maxAge" onchange="window.state.getMaxAge();">
+            
    </form>
 	
 

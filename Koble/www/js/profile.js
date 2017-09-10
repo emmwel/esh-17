@@ -11,8 +11,6 @@ Profile.prototype = {
             window.state = self;
             
              window.header.set("Tillbaka", "My tags", true, true);
-    
-            self.initSettings();
             $("#main").trigger('create');
 			
             self.getProfile();
@@ -21,35 +19,12 @@ Profile.prototype = {
 		
     },
     
-    
-    initBtns: function(){
-		var self = this;       
-
-        $("#settingsButton").on("click",function(){
-			 
-             window.state = new Settings();
-             window.state.init();
-            
-        }); 
-
-		
-    },
-    
-    initSettings: function() {
-        
-        var items = '<input type="button" id="settingsButton" value="Settings" />';
-        $("#settingsBtnDiv").html(items);
-   
-        
-    },
-    
-    /*
     goToSettings: function() {
         
          window.state = new Settings();
          window.state.init();
         
-    },*/
+    },
     
     getProfile: function() {
         var self = this;

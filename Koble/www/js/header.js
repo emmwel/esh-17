@@ -36,7 +36,7 @@ Header.prototype = {
         
         if( this.showSettings == true ) 
         {
-            this.html += '<input type="button" id="headerBtn2" value="Settings" />';
+            this.html += '<input type="button" id="headerBtn2" onclick="window.state.goToSettings();" value="Settings" />';
             
         } else {
             

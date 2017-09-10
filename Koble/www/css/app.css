@@ -417,6 +417,7 @@ webkit-appearance: none;
     margin: 20px;
 }
 .activityUserImg {
+
     width: 50%;
       display: block;
   background-size: cover;
@@ -471,3 +472,15 @@ webkit-appearance: none;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 10px;
 }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.show{display:block;}
