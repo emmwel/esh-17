@@ -341,8 +341,8 @@ webkit-appearance: none;
 /* My tags */
 
 .placesDiv {
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 3px;
     color: white;
     padding: 20px;
@@ -451,11 +451,12 @@ webkit-appearance: none;
     font-size: 40px;
     color: white;
     margin-top: 20px;
+    margin-left: 2px;
 }
 /* Activity */
 .activityUser {
-        border: 1px solid rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     border-radius: 5px;
     color: white;
     padding: 20px;
@@ -481,6 +482,22 @@ webkit-appearance: none;
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
 }
 
+#myDropdown {
+    width: 71%;
+    outline: 0;
+    border: 1px solid rgba(80, 163, 162, 0.8);
+    border-radius: 3px;
+    background-color: rgba(80, 163, 162, 0.9);
+    border: 0;
+    margin-left: 55px;
+    color: #3eb1b1;
+
+} 
 .show{display:block;}
+
+#woman, #man, #allGenders {
+    width: 100%;
+}
