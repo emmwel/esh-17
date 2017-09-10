@@ -508,3 +508,6 @@ webkit-appearance: none;
 #woman, #man, #allGenders {
     width: 100%;
 }
+#content {
+    background-color: black;
+}
